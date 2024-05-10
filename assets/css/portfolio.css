@@ -1,0 +1,44 @@
+/* Title */
+.portfolio-bg {
+  background-image: url("../images/port-bg.jpg");
+}
+
+/* Content */
+h2 {
+  font-size: 24px;
+  padding: 20px;
+}
+
+/* Gallery grid view credit w3schools.com start here */
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px 40px 4px;
+}
+
+.gallery-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery-column a img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* Gallery grid view credit w3schools.com end here */

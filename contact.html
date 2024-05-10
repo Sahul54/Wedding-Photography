@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#efdbd8" />
+    <meta name="author" content="Klaudia Matysiak" />
+    <meta
+      name="description"
+      content="Krystine Monté | Wedding Photography | Cardiff |"
+    />
+    <meta
+      name="url"
+      content="https://klaudiamatysiak.github.io/1MP-Matysiak/"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css"
+      integrity="sha512-Qg72y9f1a3aVc1FVnjq5YURLOOG8fDKQjMnhxYaZgBz4nIVjpVOBUtuMMMqkZPS1FlVrzzEBXq2sM6Qp1zen/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+
+    <title>Contact | Dream Photography |</title>
+    <link rel="icon" href="assets/images/logo4.png" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="main-nav">
+      <a href="index.html"
+        ><img class="logo" alt="logo" src="assets/images/logo4.png"
+      /></a>
+      <button class="hamburger" id="hamburger" aria-label="menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="menu-list" id="menu-list">
+        <li class="menu-item">
+          <a href="index.html"><span>Home</span></a>
+        </li>
+        <li class="menu-item">
+          <a><span>Wedding</span></a>
+          <ul class="submenu-list">
+            <li class="submenu-item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="submenu-item">
+              <a href="prices.html">Packages & Prices</a>
+            </li>
+            <li class="submenu-item"><a href="reviews.html">Reviews</a></li>
+          </ul>
+        </li>
+        <li class="menu-item logo-space"></li>
+        <li class="menu-item">
+          <a href="about.html"><span>About</span></a>
+        </li>
+        <li class="menu-item">
+          <a href="contact.html"><span>Contact</span></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Header -->
+    <section class="bg contact-bg">
+      <h2 class="title">Contact</h2>
+    </section>
+    <!-- Content -->
+    <section>
+      <div class="contact-thx">
+        <h2>Wales Based Wedding Photographer</h2>
+        <img
+          class="contact-photo"
+          src="assets/images/home-img2.jpeg"
+          alt="Newlyweds with love word on the beach"
+        />
+        <p>Thank you for your interest in my wedding photography!</p>
+        <p>
+          Please fill in the short form below so that I can check my
+          availability and get back to you.
+        </p>
+      </div>
+      <!-- Contact form -->
+      <div class="wrapper-form">
+        <div class="form">
+          <form method="post" action="https://formdump.codeinstitute.net/"  onsubmit="sendEmail()">
+            <label for="fname">First name:<span class="red-text">*</span></label
+            ><br />
+            <input type="text" id="fname" name="fname" required /><br />
+            <label for="email">Email:<span class="red-text">*</span></label
+            ><br />
+            <input type="email" id="email" name="email" required /><br />
+            <label for="mobile">Mobile:<span class="red-text">*</span></label
+            ><br />
+            <input type="text" id="mobile" name="mobile" required /><br />
+            <label for="date"
+              >Wedding date:<span class="red-text">*</span></label
+            ><br />
+            <input type="datetime-local" id="date" name="date" required /><br />
+            <label for="venue"
+              >Reception Venue:<span class="red-text">*</span></label
+            ><br />
+            <input type="text" id="venue" name="venue" required /><br />
+            <label for="package"
+              >What package are you interested in?<span class="red-text"
+                >*</span
+              ></label
+            >
+            <select id="package" name="package" required>
+              <option value="">Choose</option>
+              <option value="standard-package">Standard Package</option>
+              <option value="premium-package">Premium Package</option></select
+            ><br />
+            <label for="tell-me"
+              >Tell me more about you and your vision for a wedding day</label
+            ><br />
+            <textarea
+              id="tell-me"
+              name="tell-me"
+              rows="10"
+              cols="50"
+            ></textarea>
+            <p>How did you find me?</p>
+            <input type="checkbox" id="fb" name="how" />
+            <label for="fb">Facebook</label><br />
+            <input type="checkbox" id="ig" name="how" />
+            <label for="ig">Instagram</label><br />
+            <input type="checkbox" id="tt" name="how" />
+            <label for="tt">TikTok</label><br />
+            <input type="checkbox" id="google" name="how" />
+            <label for="google">Google</label><br />
+            <input type="checkbox" id="other" name="how" />
+            <label for="other">Other</label><br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <a
+        href="http://facebook.com/"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook"
+        ><i class="fab fa-facebook-square fb"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/dream_photography009?igsh=cnRlbXJ4bTBhMDQx"
+        target="_blank"
+        rel="noopener"
+        aria-label="Instagram"
+        ><i class="fab fa-instagram ig"></i
+      ></a>
+      <span class="copyright">2024 © Sahul Kumar</span>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+      function sendEmail() {
+          Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "username",
+          Password: "password",
+          To: "them@website.com",
+          From: "you@isp.com",
+          Subject: "This is the subject",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
+    </script>
+  </body>
+</html>

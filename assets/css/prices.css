@@ -1,0 +1,159 @@
+/* Header */
+.prices-bg {
+    background-image: url("../images/package-img.avif");
+}
+
+/* Content Packages */
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6vh 10vh;
+    background-image: linear-gradient(to right,#efdbd8, #f4e2d8);
+    margin: 100px;
+}
+
+.title-offer {
+    font-size: 38px;
+    padding: 20px 0 20px 0;
+    text-transform: uppercase;
+}
+
+.standard-package {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    border: var(--subtitle) solid;
+}
+
+.premium-package {
+    padding: 10px;
+    border: var(--subtitle) solid;
+}
+
+.offer .standard-package p, .offer .premium-package p, .add-ons p {
+    padding: 5px;
+}
+
+.add-ons {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.add-ons span {
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+p i {
+    padding: 5px;
+}
+
+.subtitle-addons {
+    padding: 10px;
+}
+
+img {
+    height: 15vh;
+}
+
+/* Content Photoshoots */
+.photoshoots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-photoshoots {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+    width: 100vh;
+    margin: 25px 0;
+}
+
+.name-photoshoots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    color: var(--subtitle);
+    background-color: rgba(0, 0, 0, 0.3);
+    height: inherit;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.classic {
+    background-image: url("../images/classic.png");
+}
+
+.romantic {
+    background-image: url("../images/romantic.png");
+}
+
+.hen-stag {
+    background-image: url("../images/hen-stag.png");
+}
+
+.pregnancy {
+    background-image: url("../images/pregnancy.png");
+}
+
+.sensual {
+    background-image: url("../images/sensual.png");
+}
+
+@media only screen and (min-width: 960px) {
+    .offer {
+        transition: all 0.5s ease;
+    }
+
+    .title-offer {
+        transition: all 0.5s ease;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .offer {
+        margin: 0 0 75px 0;
+        transition: all 0.5s ease;
+    }
+
+    .bg-photoshoots{
+        background-position: center left;
+        max-width: 60vh;
+    }
+
+    .title-offer {
+        font-size: 28px;
+        transition: all 0.5s ease;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .bg-photoshoots{
+        background-position: center left;
+        max-width: 40vh;
+    }
+
+    .offer {
+        margin: 0;
+        padding: 0;
+        transition: all 0.5s ease;
+    }
+
+    .standard-package, .premium-package {
+        margin: 5px;
+    }
+}

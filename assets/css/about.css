@@ -1,0 +1,71 @@
+/* Header */
+.about-bg {
+    background-image: url("../images/about-us.jpeg");
+}
+
+/* Content */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh 0;
+}
+
+.krystine {
+    padding: 40px;
+    font-size: 34px;
+}
+
+.about-photo {
+    max-width: 380px;
+    max-height: 380px;
+    padding: 5px;
+}
+
+.about-text {
+    padding: 5px;
+}
+
+.about-text p {
+    padding-bottom: 10px;
+    text-align: justify;
+    padding-right: 30px;
+}
+
+.btn-wrapper {
+    padding: 20px;
+}
+
+@media only screen and (min-width: 960px) {
+    .about-text {
+        float: left;
+        max-width: 70vh;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .about-story {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-photo {
+        padding-bottom: 20px;
+    }
+
+    .about-text {
+        max-width: 60vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-photo {
+        padding: 0;
+    }
+
+    .about-text {
+        padding-top: 10px;
+        max-width: 50vh;
+    }
+}

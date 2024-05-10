@@ -1,0 +1,76 @@
+/* Header */
+.reviews-bg {
+    background-image: url("../images/about.webp");
+}
+
+/* Content */
+h2 {
+    font-size: 28px;
+    padding: 10px;
+}
+
+.reviews-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10vh;
+}
+
+.review-image img {
+    max-width: 40vh;
+    padding: 5px 0 0 0;
+}
+
+.stars {
+    padding: 20px 0 0 0;
+    font-size: 16px;
+    color: #ffe600;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    letter-spacing: 3px;
+}
+
+p {
+    padding: 10px;
+    max-width: 100vh;
+}
+
+.quote-left {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 4vh;
+    color: var(--accent);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.quote-right {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 4vh;
+    color: var(--accent);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.review-comment {
+    text-align: justify;
+}
+
+.review {
+    border: 1px solid var(--accent);
+}
+
+@media only screen and (max-width: 480px) {
+    .review {
+        margin: 1rem;
+    }
+
+    .review-image img {
+        max-width: 40vh;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .review {
+        margin: 2rem;
+    }
+}
